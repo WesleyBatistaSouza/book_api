@@ -3,7 +3,7 @@ import { Book } from "../model/book.model.js";
 import fs from "fs";
 import path from "path";
 
-const fileBook = path.resolve("./dataBooks/books.json");
+const fileBook = path.resolve("books.json");
 
 export function loadBooks() {
     try {
@@ -25,18 +25,18 @@ export function saveBooks(books) {
 
 let listBook = loadBooks();
 
-export function createBook(title, author, qtdPage, available, genre) {
-  const newBook = new Book(title, author, qtdPage, available, genre);
+export function createBook(title, author, qtdPage, genre) {
+  const newBook = new Book(title, author, qtdPage, genre);
   listBook.push(newBook);
   saveBooks(listBook)
   return listBook;
 }
 
-export function updateBook(id, title, author, qtdPage, available, genre) {
+export function updateBook(id, title, author, qtdPage, genre) {
   const bookIndex = listBook.findIndex((book) => book.id === id)
   
   if(bookIndex !== -1) {
-    listBook[bookIndex] = { ...listBook[bookIndex], title, author, qtdPage, available, genre };
+    listBook[bookIndex] = { ...listBook[bookIndex], title, author, qtdPage, genre };
     saveBooks(listBook);
     return listBook[bookIndex]
   }
