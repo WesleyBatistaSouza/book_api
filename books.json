@@ -1,0 +1,48 @@
+[
+  {
+    "id": "02e3e2fc-15ec-4e97-8e24-f92c20a442c9",
+    "title": "The Great Gatsby",
+    "autor": "F. Scott Fitzgerald",
+    "pag": 180,
+    "available": false,
+    "genre": "Fiction"
+  },
+  {
+    "id": "e1ce92b8-d35a-47c3-9ed4-50df06e74b96",
+    "title": "To Kill a Mockingbird",
+    "autor": "Harper Lee",
+    "pag": 281,
+    "available": false,
+    "genre": "Fiction"
+  },
+  {
+    "id": "8b3c728f-dc19-4c74-8296-194a03486f97",
+    "title": "1984",
+    "autor": "George Orwell",
+    "pag": 328,
+    "available": false,
+    "genre": "Science Fiction"
+  },
+  {
+    "id": "99f9b904-1e50-4dc2-98c7-3bf841c56e33",
+    "title": "Brave New World",
+    "autor": "Aldous Huxley",
+    "pag": 311,
+    "available": false,
+    "genre": "Science Fiction"
+  },
+  {
+    "id": "559df30f-e3da-46ec-90eb-36d2eb806c91",
+    "title": "The Great Gatsby",
+    "autor": "Jane Austen",
+    "pag": 279,
+    "available": true,
+    "genre": "Fiction"
+  },
+  {
+    "id": "f17ef71b-8275-4ffe-a313-9d6aba6b5a8c",
+    "title": "Great Gatsby",
+    "available": true,
+    "genre": "Fiction"
+  }
+]

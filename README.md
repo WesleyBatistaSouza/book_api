@@ -1,0 +1,2 @@
+<h1>Estante de Livros</h1>
+<p>API feita para criação de uma "bookcase virtual", traduzindo, uma "estante de livros virtual", na qual permite que o usuario possa criar, deletar, editar e filtrar livros por genero e/ou titulo do livro</p>
