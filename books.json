@@ -1,12 +1,5 @@
 [
   {
-    "id": "0ab8cc59-80fd-4ac3-a6a5-92092acf397c",
-    "title": "Clean Code",
-    "autor": "Robert C. Martin",
-    "pag": 464,
-    "genre": "Programming"
-  },
-  {
     "id": "45f13f1d-0432-4a54-998c-7adce54f95c4",
     "title": "The Pragmatic Programmer",
     "autor": "Andrew Hunt, David Thomas",
@@ -21,9 +14,10 @@
     "genre": "Web Development"
   },
   {
-    "id": "8666a495-9f4b-447d-bca1-554e0351d8fe",
-    "title": "JavaScript: The Good Parts",
-    "pag": false,
-    "genre": "Web Development"
+    "id": "6cf7a8d9-f4a1-4cd0-be34-fc75da5bc220",
+    "title": "1984",
+    "autor": "George Orwell",
+    "pag": 328,
+    "genre": "Science Fiction"
   }
 ]

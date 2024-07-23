@@ -25,18 +25,18 @@ export function saveBooks(books) {
 
 let listBook = loadBooks();
 
-export function createBook(title, author, qtdPage, genre) {
-  const newBook = new Book(title, author, qtdPage, genre);
+export function createBook(title, author, pag, genre) {
+  const newBook = new Book(title, author, pag, genre);
   listBook.push(newBook);
   saveBooks(listBook)
   return listBook;
 }
 
-export function updateBook(id, title, author, qtdPage, genre) {
+export function updateBook(id, title, author, pag, genre) {
   const bookIndex = listBook.findIndex((book) => book.id === id)
   
   if(bookIndex !== -1) {
-    listBook[bookIndex] = { ...listBook[bookIndex], title, author, qtdPage, genre };
+    listBook[bookIndex] = { ...listBook[bookIndex], title, author, pag, genre };
     saveBooks(listBook);
     return listBook[bookIndex]
   }

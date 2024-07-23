@@ -4,9 +4,9 @@ import { allBooks, createBook, deleteBook, searchBook, searchBookGenre, updateBo
 const bookRouter = Router();
 
 bookRouter.post("/book", (req, res) => {
-  const { title, author, qtdPage, genre } = req.body;
+  const { title, author, pag, genre } = req.body;
 
-  const newBook = createBook(title, author, qtdPage, genre);
+  const newBook = createBook(title, author, pag, genre);
   res.status(200).json({ newBook });
 });
 
@@ -18,9 +18,9 @@ bookRouter.delete("/book/:id", (req, res) => {
 
 bookRouter.put("/book/edit/:id", (req, res) => {
   const { id } = req.params; 
-  const { title, author, qtdPage, genre } = req.body;
+  const { title, author, pag, genre } = req.body;
   
-  const editBook = updateBook(id, title, author, qtdPage, genre);
+  const editBook = updateBook(id, title, author, pag, genre);
 
   if(editBook) {
     res.status(200).json(editBook);
