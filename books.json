@@ -1,23 +1,163 @@
 [
   {
-    "id": "45f13f1d-0432-4a54-998c-7adce54f95c4",
-    "title": "The Pragmatic Programmer",
-    "autor": "Andrew Hunt, David Thomas",
-    "pag": 352,
-    "genre": "Programming"
+    "title": "O Senhor dos Anéis",
+    "author": "J.R.R. Tolkien",
+    "pag": 1200,
+    "genre": "Fantasia",
+    "date_publication": "1954-07-29"
   },
   {
-    "id": "62741225-15dc-465e-8cd2-f32e8d0f1905",
-    "title": "JavaScript: The Good Parts",
-    "autor": "Douglas Crockford",
-    "pag": 176,
-    "genre": "Web Development"
-  },
-  {
-    "id": "6cf7a8d9-f4a1-4cd0-be34-fc75da5bc220",
     "title": "1984",
-    "autor": "George Orwell",
+    "author": "George Orwell",
     "pag": 328,
-    "genre": "Science Fiction"
+    "genre": "Distopia",
+    "date_publication": "1949-06-08"
+  },
+  {
+    "title": "Dom Casmurro",
+    "author": "Machado de Assis",
+    "pag": 256,
+    "genre": "Romance",
+    "date_publication": "1899-01-01"
+  },
+  {
+    "title": "A Revolução dos Bichos",
+    "author": "George Orwell",
+    "pag": 112,
+    "genre": "Distopia",
+    "date_publication": "1945-08-17"
+  },
+  {
+    "title": "Harry Potter e a Pedra Filosofal",
+    "author": "J.K. Rowling",
+    "pag": 223,
+    "genre": "Fantasia",
+    "date_publication": "1997-06-26"
+  },
+  {
+    "title": "O Código Da Vinci",
+    "author": "Dan Brown",
+    "pag": 689,
+    "genre": "Suspense",
+    "date_publication": "2003-03-18"
+  },
+  {
+    "title": "Orgulho e Preconceito",
+    "author": "Jane Austen",
+    "pag": 279,
+    "genre": "Romance",
+    "date_publication": "1813-01-28"
+  },
+  {
+    "title": "Cem Anos de Solidão",
+    "author": "Gabriel García Márquez",
+    "pag": 417,
+    "genre": "Realismo Mágico",
+    "date_publication": "1967-06-05"
+  },
+  {
+    "title": "O Alquimista",
+    "author": "Paulo Coelho",
+    "pag": 208,
+    "genre": "Ficção",
+    "date_publication": "1988-05-01"
+  },
+  {
+    "title": "A Guerra dos Tronos",
+    "author": "George R.R. Martin",
+    "pag": 694,
+    "genre": "Fantasia",
+    "date_publication": "1996-08-06"
+  },
+  {
+    "title": "O Silêncio dos Inocentes",
+    "author": "Thomas Harris",
+    "pag": 338,
+    "genre": "Suspense",
+    "date_publication": "1988-08-01"
+  },
+  {
+    "title": "O Pequeno Príncipe",
+    "author": "Antoine de Saint-Exupéry",
+    "pag": 96,
+    "genre": "Infantil",
+    "date_publication": "1943-04-06"
+  },
+  {
+    "title": "O Caçador de Pipas",
+    "author": "Khaled Hosseini",
+    "pag": 371,
+    "genre": "Drama",
+    "date_publication": "2003-05-29"
+  },
+  {
+    "title": "A Menina que Roubava Livros",
+    "author": "Markus Zusak",
+    "pag": 550,
+    "genre": "Drama",
+    "date_publication": "2005-03-14"
+  },
+  {
+    "title": "O Nome do Vento",
+    "author": "Patrick Rothfuss",
+    "pag": 662,
+    "genre": "Fantasia",
+    "date_publication": "2007-08-27"
+  },
+  {
+    "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+    "author": "Robert C. Martin",
+    "pag": 464,
+    "genre": "Tecnologia",
+    "date_publication": "2008-08-01"
+  },
+  {
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt, David Thomas",
+    "pag": 352,
+    "genre": "Tecnologia",
+    "date_publication": "1999-10-20"
+  },
+  {
+    "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+    "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+    "pag": 395,
+    "genre": "Tecnologia",
+    "date_publication": "1994-10-31"
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "pag": 180,
+    "genre": "Romance",
+    "date_publication": "1925-04-10"
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "pag": 277,
+    "genre": "Drama",
+    "date_publication": "1951-07-16"
+  },
+  {
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "pag": 280,
+    "genre": "Horror",
+    "date_publication": "1818-01-01"
+  },
+  {
+    "title": "The Phoenix Project",
+    "author": "Gene Kim, Kevin Behr, George Spafford",
+    "pag": 432,
+    "genre": "Tecnologia",
+    "date_publication": "2013-01-10"
+  },
+  {
+    "title": "Cracking the Coding Interview",
+    "author": "Gayle Laakmann McDowell",
+    "pag": 687,
+    "genre": "Tecnologia",
+    "date_publication": "2011-07-01"
   }
 ]

@@ -4,9 +4,9 @@ import { allBooks, createBook, deleteBook, searchBook, searchBookGenre, updateBo
 const bookRouter = Router();
 
 bookRouter.post("/book", (req, res) => {
-  const { title, author, pag, genre } = req.body;
+  const { title, author, pag, genre, date_publication } = req.body;
 
-  const newBook = createBook(title, author, pag, genre);
+  const newBook = createBook(title, author, pag, genre, date_publication);
   res.status(200).json({ newBook });
 });
 
@@ -29,13 +29,18 @@ bookRouter.put("/book/edit/:id", (req, res) => {
   }
 })
 
-bookRouter.get("/book", (req, res) => {
-  const getAllBooks = allBooks();
-  res.json({ getAllBooks });
+bookRouter.get("/book", async (req, res) => {
+  try {
+    const getAllBooks = await allBooks(); // Aguarde a função se for assíncrona
+    res.json(getAllBooks); // Retorne diretamente o array
+  } catch (error) {
+    res.status(500).json({ error: "Erro ao buscar livros" });
+  }
 });
 
-bookRouter.get("/book/title", (req, res) => {
-  const { title } = req.query;
+
+bookRouter.get("/book/title/:title", (req, res) => {
+  const { title } = req.params; // Corrigido para usar req.params
 
   if (!title) {
     return res.status(404).json({ error: "Livro não encontrado" });
@@ -45,11 +50,22 @@ bookRouter.get("/book/title", (req, res) => {
   res.status(200).json(listSearchBook);
 });
 
-bookRouter.get("/book/genre/:genreBook", (req, res) => {
-  const { genreBook } = req.params;
 
-  const genreBookList = searchBookGenre(genreBook);
+bookRouter.get("/book/genre/:genre", (req, res) => {
+  const { genre } = req.params; // Corrigido para 'genre' de acordo com a rota
+
+  if (!genre) {
+    return res.status(400).json({ error: "Gênero não fornecido" });
+  }
+
+  const genreBookList = searchBookGenre(genre); // Busca baseada no gênero fornecido
+  if (genreBookList.length === 0) {
+    return res.status(404).json({ error: "Nenhum livro encontrado para esse gênero" });
+  }
+
   res.status(200).json(genreBookList);
 });
+
+
 
 export { bookRouter };
